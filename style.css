@@ -1,8 +1,13 @@
 /*body (contains all visible content on the webpage)*/
-body {
-  margin: 0 auto;
+html, body {
+  margin: 0;
+  width: 100%;
+  height:100%;
 }
-
+img{
+  height:auto;
+  width:auto;
+}
 /*class used by buttons in menu, which are the login and cart buttons*/
 .menubutton {
   border: none;
@@ -80,6 +85,7 @@ body {
   max-height: 150px;
   align-items: center;
   font-family: "Arial";
+
 }
 
 /* search bar css */
@@ -110,14 +116,16 @@ body {
 
 /*main div contains everything between menu div and suggestions container*/
 #main {
-  overflow-y: scroll;
+  width:100vw;
   height: 650px;
   align-items: center;
+  display: grid;
+  grid-template-columns: auto;
 }
-
 /*contains title, price, color selection,add to cart button, and quantity*/
 #selectiondiv {
   text-align: left;
+  float: left;
 }
 
 /*product title*/
@@ -140,7 +148,7 @@ body {
 
 /*contains suggested products under main product*/
 #suggestionscontainer {
-  width: 100%;
+  width: 100vw;
   background-color: #b48484;
   padding-top: 20px;
   position: static;
@@ -154,6 +162,7 @@ body {
   display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
+
 }
 
 /*cart and login buttons grid*/
@@ -264,6 +273,8 @@ grid-row-gap: 40px;
   padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
+  width:100vw;
+
 }
 
 /*div containing social media icons*/
@@ -312,6 +323,7 @@ grid-row-gap: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
+
 }
 
 #line {

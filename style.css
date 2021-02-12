@@ -1,0 +1,344 @@
+/*body (contains all visible content on the webpage)*/
+html, body {
+  margin: 0;
+  width: 100%;
+  height:100%;
+}
+img{
+  height:auto;
+  width:auto;
+}
+/*class used by buttons in menu, which are the login and cart buttons*/
+.menubutton {
+  border: none;
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+/*buttons that contain the color options images*/
+.swatchbutton {
+  background-color: transparent;
+  border: transparent;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+/*product image */
+.product {
+  width: 260px;
+  height: 260px;
+  padding-left: 90px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/*images of suggested products*/
+.suggestedproduct {
+  width: 200px;
+}
+
+/*decreases the opacity of images of suggested products when hovered on*/
+.suggestedproduct:hover {
+  opacity: 0.8;
+}
+
+/*css for images used in cart and login buttons on the top right*/
+.menuicon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/*class that defines a other titles on page, other than the product title (protitle) */
+.titles {
+  font-family: "Arial";
+  font-size: 20pt;
+}
+
+/*defines width and border of color ooption images*/
+.swatches {
+  width: 30px;
+  border: 4px solid transparent;
+}
+
+/*defines width and border of color ooption images on hover*/
+.swatches:hover {
+  border: 2px solid black;
+  margin-top: -4px;
+  padding: 2px;
+}
+
+/* defines css for menu bar on top(black background)*/
+#menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  max-height: 150px;
+  align-items: center;
+  font-family: "Arial";
+
+}
+
+/* search bar css */
+#search {
+  float: right;
+  padding: 6px;
+  border: none;
+  border-bottom: 2px solid #b48484;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 12px;
+}
+
+/*search bar on focus, removed outline*/
+#search:focus {
+  outline: none;
+}
+
+/*logo image on top left*/
+#logo {
+  width: 150px;
+  height: 150px;
+  padding-left: 70px;
+}
+
+/*main div contains everything between menu div and suggestions container*/
+#main {
+  width:100vw;
+  height: 650px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+}
+/*contains title, price, color selection,add to cart button, and quantity*/
+#selectiondiv {
+  text-align: left;
+  float: left;
+}
+
+/*product title*/
+#protitle {
+  font-family: "Arial";
+  color: black;
+  font-weight: 400;
+  font-size: 30pt;
+  padding-left: 20px;
+}
+
+/*class to define text properties(sometimes it is overwritten by in-line css)*/
+.text {
+  font-family: "Arial";
+  color: black;
+  padding-left: 20px;
+  font-size: 12pt;
+  margin: 0;
+}
+
+/*contains suggested products under main product*/
+#suggestionscontainer {
+  width: 100vw;
+  background-color: #b48484;
+  padding-top: 20px;
+  position: static;
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*grid inside suggestions container used to arrange the suggested product images*/
+#suggestionsgrid {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+
+}
+
+/*cart and login buttons grid*/
+#cartmenu {
+  width: 70px;
+  background-color: black;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding-top: 30px;
+  margin-left: 50px;
+}
+
+/* The 4 navigation links in menu bar on top*/
+#navigation {
+
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 70px;
+  padding-top: 30px
+}
+
+/*css for all links in the menu div*/
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+/*css for all links in menu div on hover*/
+#navigation a:hover {
+  color: white;
+  border-bottom: 5px solid #b48484;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+/*list of specifications*/
+#list{
+  text-align: left;
+}
+/*list item css*/
+#list li {
+  font-family: "Arial";
+}
+
+
+/* div that contains images of color options*/
+#swatchdiv {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+/*css for quantity number selector*/
+#quantity {
+  height: 20px;
+  width: 155px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+/*label used for the form (to select quantity) */
+label {
+  font-family: "Arial";
+}
+
+/*text(link) under product suggestion images*/
+.sugtxtdiv a {
+  text-decoration: none;
+  color: black;
+  font-family: "Arial";
+}
+
+/*text(link) under product suggestion images(underlines when hovered on)*/
+.sugtxtdiv a:hover {
+  text-decoration: underline;
+}
+
+/*Add to Bag button*/
+#addtobag {
+  border-radius: 0;
+  margin-top: 30px;
+  height: 50px;
+  width: 240px;
+  background-color: black;
+  color: white;
+  font-family: "Arial";
+  font-size: 12pt;
+  padding-top: 8px;
+  border: 0pt;
+}
+
+/*Add to Bag button: changes opacity and cursor when hovered on*/
+#addtobag:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/*footer div*/
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto auto auto;
+grid-row-gap: 40px;
+  padding-right:100px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width:100vw;
+
+}
+
+/*div containing social media icons*/
+#socials {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 20px;
+  width: 400px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+/*css for the links in the footer div (the class is used in the copyright div and FAQ, help... div)*/
+.footerlinks a {
+  font-family: "Arial";
+  color: white;
+  font-size: 10pt;
+  text-decoration: none;
+  text-align: left;
+}
+
+/*css for the links in the socials div when hovered on*/
+.footerlinks a:hover {
+  text-decoration: underline;
+}
+
+/*copyright text*/
+.footertxt {
+  font-size: 10pt;
+  font-family: "Arial";
+  color: white;
+  font-weight: bolder;
+  text-align: left;
+}
+
+/*css for social media icons images*/
+.socialicon {
+  width: 30px;
+}
+
+/*div at the bottom of footer(contains copyright, privacy policy...)*/
+
+/*div that contains the product image and selection divs */
+#imgselec {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+
+}
+
+#line {
+  border: 1px solid #b48484;
+  opacity: 0.5;
+  width:90%;
+}
+
+#aboutproduct{
+  margin-top:20px;
+   margin-left: 35px;
+
+
+}
+
+#listdiv{
+  text-align: left;
+}

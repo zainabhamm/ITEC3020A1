@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verona Cosmetics - Liquid Lipstick</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menu">
+    <img src="logoblack.jpg" alt="logo" id="logo">
+    <div id="navigation">
+      <a href="">MAKEUP</a>
+      <a href="">SKINCARE</a>
+      <a href="">TOOLS</a>
+      <a href="">SALE</a>
+    </div>
+    <div>
+      <input id="search" type="text" placeholder="Search">
+    </div>
+    <div id="cartmenu">
+      <button class="menubutton"> <img src="login.jpg" alt="login" class="menuicon"></button>
+      <button class="menubutton"> <img src="bag.jpg" alt="cart" class="menuicon"></button>
+    </div>
+
+  </div>
+
+  <div id="main"><!-- div that contains everything in the white space, (#imgselec, #aboutproduct)-->
+<div id= "imgselec"> <!-- div for product image AND #selectiondiv-->
+
+    <img src="color33.jpg" alt="Lipstick" class="product">
+
+    <div id="selectiondiv"> <!-- div that includes product title, swatches, quantity selector, and add to cart button-->
+    <h1 id="protitle"> LIQUID LIPSTICK </h1>
+    <p class="text" style="font-size:20pt;"> CA $13.50 </p>
+    <div id="swatchdiv">
+      <button class="swatchbutton"><img src="a.jpg" alt="swatch 1" class="swatches"></button>
+      <button class="swatchbutton"><img src="b.jpg" alt="swatch 2" class="swatches"></button>
+      <button class="swatchbutton"><img src="c.jpg" alt="swatch 3" class="swatches"></button>
+      <button class="swatchbutton"><img src="d.jpg" alt="swatch 4" class="swatches"></button>
+      <button class="swatchbutton"><img src="e.jpg" alt="swatch 5" class="swatches"></button>
+      <button class="swatchbutton"><img src="f.jpg" alt="swatch 6" class="swatches"></button>
+    </div>
+
+    <div style="padding-left:20px;">
+      <!-- div for quantity selection form and cart button-->
+      <form action="verona.php"> <!--If the website was fully working, the filled in form would be sent to the file verona.php-->
+        <label for="quantity"> Quantity: </label>
+        <input  type="number" id="quantity" name="quantity" min="1" value="1" > <!-- quantity, number input with minimum and default value of 1 and no maximum-->
+    </form>
+    <button id="addtobag">ADD TO BAG</button> <!-- cart/bag button-->
+    </div>
+
+    </div>
+</div>
+
+<hr id="line"> <!--horizontal line above product description-->
+
+      <div id="aboutproduct"><!-- div for description, and specifications list (#listdiv) -->
+        <div><!-- div for description-->
+      <p class="text" style="font-size:14pt; margin-bottom:20px; font-weight:600; text-align:center;">About the Product</p>
+      <p class="text" > A liquid lip colour with a whipped, mousse-like texture
+        that delivers soft-focus moisture-matte,
+        comfortable colour with ten hours of hydration.</p>
+</div>
+<div id="listdiv"> <!-- div for specifications list-->
+      <p class="text" style="margin-top:20px;">Item specifications:  </p>
+      <ul id="list">
+        <li>Colour: Bonbony</li>
+        <li>Item form: Liquid</li>
+        <li>Item Dimensions LxWxH: 18 x 18 x 113 millimeters</li>
+        <li>Item Weight: 2.7 grams</li>
+      </ul>
+</div>
+    </div>
+
+
+  </div>
+  <div id="suggestionscontainer"> <!-- the pink div that contains suggested products-->
+    <p class="titles">Others Also Viewed </p>
+    <div id="suggestionsgrid">
+    <div> <!-- contains suggestion image and its title-->
+      <a href=""><img src="mascara.jpg" alt="Mascara" class="suggestedproduct"></a><!-- image of suggestion-->
+      <div class="sugtxtdiv"><a href=""><p> Cooper Mascara </p></a></div><!-- title of suggestion,it is supposed to have the same link as the suggested product image (clicking on the image or text takes links to same product)-->
+    </div>
+    <div> <!-- contains suggestion image and its title-->
+      <a href=""><img src="blush.jpg" alt="Blush" class="suggestedproduct"></a>
+      <div class="sugtxtdiv"><a href=""><p> Blush Babe</p></a></div>
+    </div>
+    <div> <!-- contains suggestion image and its title-->
+      <a href=""><img src="eyeshadow.jpg" alt="Eyeshadow" class="suggestedproduct"></a>
+      <div class="sugtxtdiv"><a href=""><p> Eye Love You<br> Eyeshadow</p></a></div>
+    </div>
+    <div> <!-- contains suggestion image and its title-->
+      <a href=""><img src="nightcream.jpg" alt="Night Cream" class="suggestedproduct"></a>
+      <div class="sugtxtdiv"><a href=""><p> Nighty Night Cream</p></a></div>
+    </div>
+    </div>
+
+<div id="footer"> <!-- div for webpage footer-->
+
+<div >   <!-- div for social media icons/links-->
+<div>  <p class="footertxt" > CONNECT WITH US</p> </div>
+<div id="socials">
+<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook" class="socialicon"></a> <!-- We used the social media website links, since no specific accounts exist for the company-->
+<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram" class="socialicon"></a>
+<a href="https://www.youtube.com" target="_blank"><img src="youtube.png" alt="Youtube" class="socialicon"></a>
+<a href="https://www.pinterest.com" target="_blank"><img src="pinterest.png" alt="Pinterest" class="socialicon"></a>
+<a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter" class="socialicon"> </a><!-- the social media icons follow the same css class(icon) as the login and bag/cart icons-->
+</div>
+</div>
+<div>
+<p class="footertxt">NEED HELP?</p>
+<div class="footerlinks" style="margin-top:30px;"> <!-- div for (NEED HELP?), the footerlinks class is used to style links inside divs in the footer div-->
+<a href=""><p>FAQs</p></a>
+<a href="mailto:zainabha@my.yorku.ca"><p>Email Us</p></a> <!-- PS: try clicking this link. It opens a new mail window to directly email "zainabha@my.yorku.ca" -->
+<a href="tel:+1234567890"><p>Call Us</p></a><!-- Clicking Call Us would allow users to directly call the number provided-->
+</div>
+</div>
+<div>   <!-- div for  ABOUT US, the footerlinks class is used to style links in this div and the next one-->
+<p class="footertxt">ABOUT US</p>
+<div class="footerlinks" style="margin-top:30px;">
+<a href=""><p>About Verona</p></a>
+<a href=""><p>Authorized Retailers</p></a>
+<a href=""><p>Partnerships</p></a>
+</div>
+</div>
+
+
+  <div>   <!-- div for copyright info-->
+  <p class="footertxt" style="font-weight:normal; "> © 2021 Verona Cosmetics </p>
+  </div>
+<div class="footerlinks" style="text-decoration:underline;"><!-- div for terms and conditions-->
+<a href=""><p>Terms & Conditions</p></a>
+</div>
+<div class="footerlinks" style="text-decoration:underline; " ><!--div for privacy policy-->
+<a href=""><p>Privacy Policy</p></a>
+</div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
